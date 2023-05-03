@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ADJUNTO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- ADJUNTO BOOTSTRAP PARA JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- ADJUNTO STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONO EN LA PESTAÑA -->
+    <link rel="shortcut icon" href="img/logo_BA_02.png">
+    
+    <title>COMPRAR TICKETS</title>
+</head>
+<body>
+    
+    <header class="encabezado">
+
+    <div class="logo">
+            <img id="img" src="img/codoacodo.png" alt="encabezado">
+        </div>
+
+        <div class="titulos">
+            <p id="titulos">COMPRAR TICKETS</p>
+        </div>
+
+        <nav class="navegation">
+
+            <ul>
+                <li><a href="index.html">La Conferencia</a></li>
+                <li><a href="orator.html">Los Oradores</a></li>
+                <li><a href="place_&_date.html">El lugar y la fecha</a></li>
+                <li> <a href="new_orator.html">Conviértete en Orador</a></li>
+                <li><a class="BOTON"  href="tickets.html">COMPRAR TICKETS</a></li>
+            </ul>
+
+        </nav>
+
+    </header>    
+
+    <article class="price">
+
+        <div class="card-Columns">
+            <fieldset class="campoView">
+                <form class="campo-Gral">
+                    <div class="compra-Place">
+                        <fieldset class="campoFecha">        
+                            <div class="row justify-content-md-center fileForms">
+                                <h2>Lugar y Fecha</h2>
+                            </div>    
+                            <div class="row form-group justify-content-md-center fileForms">
+                                <div class="col-md-5 columForms">
+                                    <select class="custom-select">
+                                        <option selected>Selecciona Lugar de Conferencia</option>
+                                        <option value="1">Usina del Arte</option>
+                                        <option value="2">Teatro Colon</option>
+                                        <option value="3">Movistar Arena</option>
+                                        <option value="3">La Rural</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 columForms">
+                                    <select class="custom-select">
+                                        <option selected>Fecha</option>
+                                        <option value="1">24/5/2023</option>
+                                        <option value="2">27/5/2023</option>
+                                        <option value="3">28/5/2023</option>
+                                        <option value="5">29/5/2023</option>
+                                        <option value="6">31/5/2023</option>
+                                        <option value="7">01/6/2023</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 columForms">
+                                    <select class="custom-select">
+                                        <option selected>Hora</option>
+                                        <option value="1">15:30 HS</option>
+                                        <option value="2">17:30 HS</option>
+                                        <option value="3">19:30 HS</option>
+                                        <option value="5">21:30 HS</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>      
+                    <div class="compra-Date">
+                        <fieldset class="campoDatos">        
+                            <div class="row justify-content-md-center fileForms">
+                                <h2>Datos del Titular</h2>
+                            </div>    
+                            <div class="row form-group justify-content-md-center fileForms">
+                                <div class="col-md-5 columForms">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre(s)" class="form-control">
+                                </div>
+                                <div class="col-md-5 columForms">
+                                    <input id="fname" name="name" type="text" placeholder="Apellido(s)" class="form-control">
+                                </div>
+                                <div class="col-md-10 columForms">
+                                    <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control">
+                                </div>
+                                <div class="col-md-5 columForms">
+                                    <input id="phone" name="phone" type="text" placeholder="Teléfono de línea" class="form-control">
+                                </div>
+                                <div class="col-md-5 columForms">
+                                    <input id="phone" name="phone" type="text" placeholder="Teléfono Celular" class="form-control">
+                                </div>
+                                <div class="col-md-2 columForms">
+                                    <select class="custom-select">
+                                        <option selected>Pais</option>
+                                        <option value="1">Argentina</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 columForms">
+                                    <select class="custom-select">
+                                        <option selected>Provincia</option>
+                                        <option value="1">CABA</option>
+                                        <option value="2">Buenos Aires</option>
+                                        <option value="3">Catamarca</option>
+                                        <option value="4">Córdoba</option>
+                                        <option value="5">Chaco</option>
+                                        <option value="6">Chubut</option>
+                                        <option value="7">Entre Ríos</option>
+                                        <option value="8">Formosa</option>
+                                        <option value="9">Jujuy</option>
+                                        <option value="10">La Pampa</option>
+                                        <option value="11">La Rioja</option>
+                                        <option value="12">Misiones</option>
+                                        <option value="13">Mendoza</option>
+                                        <option value="14">Neuquén</option>
+                                        <option value="15">Río Negro</option>
+                                        <option value="16">Salta</option>
+                                        <option value="17">Santa Cruz</option>
+                                        <option value="18">Santiago del Estero</option>
+                                        <option value="19">Santa Fe</option>
+                                        <option value="20">San Juan</option>
+                                        <option value="21">San Luis</option>
+                                        <option value="22">Tierra del Fuego</option>
+                                        <option value="23">Tucumán</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5 columForms">
+                                    <input id="city_id" name="city_id" type="city_id" placeholder="Ciudad/Barrio(CABA)" class="form-control">
+                                </div>
+                                <div class="col-md-8 columForms">
+                                    <input type="text" class="form-control" id="street2_id" name="street" placeholder="Calle, Altura, Manzana, Edificio, Piso, etc.">
+                                </div>
+                                <div class="col-md-2 columForms">
+                                    <input type="text" class="form-control" id="zip_id" name="Código Postal" placeholder="#####">
+                                </div>
+                            </div>    
+                        </fieldset> 
+                    </div>  
+                    <div class="compra-Cards">   
+                        <fieldset>        
+                            <div class="row justify-content-md-center fileForms">
+                                <h2>Datos de la Tarjeta</h2>
+                            </div>
+                            <div class="row justify-content-md-center fileForms">
+                                <div class="col-md-5 columForms">
+                                    <input type="number" class="form-control" required maxlength="16" minlength="1" min="0" placeholder="Ingrese Número de Tarjeta"/>
+                                </div>
+                                <div class="col-md-3 columForms">
+                                    <select class="custom-select">
+                                        <option selected></option>
+                                        <option value="1">VISA</option>
+                                        <option value="2">MASTERCARD</option>
+                                        <option value="3">AMERICAN EXPRESS</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center fileForms">
+                                <div class="col-md-2 columForms">
+                                    <select class="custom-select">
+                                        <option selected>MES</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                        <option value="6">06</option>
+                                        <option value="7">07</option>
+                                        <option value="8">08</option>
+                                        <option value="9">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 columForms">
+                                    <select class="custom-select">
+                                        <option selected>AÑO</option>
+                                        <option value="1">2023</option>
+                                        <option value="2">2024</option>
+                                        <option value="3">2025</option>
+                                        <option value="4">2026</option>
+                                        <option value="5">2027</option>
+                                        <option value="6">2028</option>
+                                        <option value="7">2029</option>
+                                        <option value="8">2030</option>
+                                        <option value="9">2031</option>
+                                        <option value="10">2032</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 columForms">
+                                    <input inputmode="numeric" type="password" class="form-control" maxlength="3" min="0" max="999" placeholder="CCV"/>
+                                </div>
+                                <div class="col-md-2 form-check columForms">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">Crédito</label>
+                                </div>
+                                <div class="col-md-2 form-check columForms">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">Debito</label>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center fileForms">
+                                <div class="col-md-12 justify-content-md-center pad-adjust columFormsCT">
+                                    <input type="checkbox" checked class="text-muted">    ¿Aceptas los <a href="conditions.html">Términos y Condiciones?</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="compra-Send">
+                        <div class="row justify-content-md-center fileForms">
+                            <div class="col-md-3 pad-adjust">
+                                 <input type="submit"  class="btn btn-danger" value="CANCELAR" />
+                              </div>
+                              <div class="col-md-3 pad-adjust">
+                                  <input type="submit"  class="btn btn-warning btn-block" value="COMPRAR AHORA" />
+                              </div>
+                          </div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <div class="img-Columns"></div>
+
+    </article>
+
+    <footer>
+
+        <nav class="pie">
+            <ul>
+                <li><a href="questions.html">Preguntas <br> frecuentes</a></li>
+                <li><a href="contact.html">Contáctenos</a></li>
+                <li><a href="press.html">Prensa</a></li>
+                <li><a href="conference.html">Conferencias</a></li>
+                <li><a href="conditions.html">Términos y <br> Condiciones</a></li>
+                <li><a href="privacy.html">Privacidad</a></li>
+                <li><a href="students.html">Estudiantes</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+</html>

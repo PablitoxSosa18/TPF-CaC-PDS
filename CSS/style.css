@@ -1,0 +1,725 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    height: 100%;
+
+    margin: 1px;
+    padding: 1px;
+}
+
+body{
+    background-color: black;
+
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 4fr 100px;
+}
+
+header{
+    display: grid;
+    
+    grid-template-columns: 0.75fr 1.25fr 3fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+
+    grid-column-gap: 2px;
+
+    background-color:rgb(51, 58, 64);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(28, 57, 71);
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+}
+
+/* HEADER GENERICO*/
+
+.encabezado{
+    color: white;
+}
+
+.encabezado .logo {   
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+
+.encabezado .titulos p{
+
+    font-size: 35px;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navegation{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 1px;
+}
+
+.navegation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.navegation li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.navegation li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 18px;
+
+    padding: 1px;
+    text-decoration: none;
+}
+
+.navegation li a:hover{
+    color: rgb(7, 84, 185);
+}
+
+.navegation li .BOTON{
+    color: green;
+}
+
+.navegation li .BOTON:hover{
+    color: wheat;
+}
+
+/* PIE GENERICO */
+
+.pie{
+    width: 80%;
+}
+
+.pie ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.pie li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding: 10px;
+    margin: 10px;
+}
+
+.pie li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    padding: 8px;
+    margin: 8px;
+  }
+
+.pie li a:hover{
+    color: rgb(49, 96, 156);
+}
+
+.pie a{
+    padding: 8px;
+    font-size: 18px;
+}
+
+/* HTML PRINCIPAL */
+
+.principal{
+    color: white;
+    position: relative;
+
+    font-size: 16px;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.principal .fondo{
+    opacity: 55%;
+}
+
+.principal h1{
+    text-align: right;
+    height: max-content;
+}
+
+.principal p{
+    text-align: right;
+    height: max-content;
+}
+
+.principal .text-center {
+    position: absolute;
+    display: inline;
+
+    justify-content: right;
+    align-items: center;
+    
+    width: 50vw;
+    height: 5vh;
+
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.principal nav a{
+
+    font-size: 18px;
+    color: white;    
+    padding: 5px;
+    border: 3px;
+    text-decoration: none;
+
+    height: 5vh;
+    width: 20vw;
+}
+
+.principal .botonOR{
+
+    text-align: center;
+    background-color: transparent;
+
+    border-radius: 12px;
+    
+    border-color:white;
+    border-style: solid;
+}
+
+.principal .botonOR:hover{
+    color: rgb(49, 96, 156);
+    background-color: white;
+}
+
+.principal .botonTI{
+
+    text-align: center;
+    background-color: green;
+
+    border-radius: 12px;
+    
+    border-color:green;
+    border-style: solid;
+}
+
+.principal .botonTI:hover{
+    border-style: solid;
+    border-color:whitesmoke;
+    color: gray;
+}
+
+/* HTML ORADOR */
+
+.orador {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: grid;
+
+    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-rows: 15% 85%;
+}
+
+.orador p{
+    font-size: 12px;
+    height: max-content;
+}
+
+.orador h2{
+    font-size: 18px;
+    height: max-content;
+}
+
+.orador .box-Tittle{
+    grid-column: 1 / span 5;
+}
+
+.orador .btnExample{
+    position: relative;
+    display: flex;
+    font-size: 11px;
+
+    color: white;
+}
+
+.btnExample .btn-OR-1{
+    padding: 1px;
+    border: 1px;
+
+    background-color: gold;
+    color: black;
+    border-radius: 6px;
+}
+
+.btnExample .btn-OR-2{
+    padding: 1px;
+    border: 1px;
+
+    background-color: lightseagreen;
+    
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.btnExample .btn-OR-3{
+    padding: 1px;
+    border: 1px;
+
+    background-color: gray;
+    
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.btnExample .btn-OR-4{
+    padding: 1px;
+    border: 1px;
+
+    background-color: red;
+    
+    border-style: solid;
+    border-radius: 6px;
+}
+
+/* HTML LUGAR Y DATOS*/
+
+.place{
+    background-color: white;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+
+    font-size: 16px;
+    text-align: center;
+
+    border-color: white;
+    border-style: solid;
+}
+
+.place .columns-IMG{
+    overflow: visible;
+
+    align-items: center;
+    align-content: center;
+}
+
+.place .columns-TXT{
+    display: inline;
+    text-align: justify;
+
+    background-color:rgb(51, 58, 64);
+
+    border: 10px;
+    padding: 15px;
+}
+
+.columns-TXT h2{
+    font-family: 18px;
+    height: max-content;
+}
+
+.columns-TXT p{
+    font-family: 16px;
+    height: max-content;    
+}
+
+.columns-TXT .txt-BTN{
+    font-family: 16px;
+    height: max-content; 
+    width: max-content;   
+
+    border: 10px;
+    padding: 15px;
+}
+
+.txt-BTN a{
+    height: 50px; 
+    width: max-content;  
+
+    text-decoration: none;
+    color: white;
+
+    border: 2px;
+    padding: 15px;
+
+    border-radius: 6px;
+    border-color: white;
+    border-style: solid;
+}
+
+.txt-BTN a:hover{
+    border: 2px;
+    padding: 15px;
+
+    color:rgb(51, 58, 64);
+    font-style: italic;    
+
+    border-radius: 6px;
+    background-color: white;
+}
+
+/* HTML CONDICIONES */
+
+.termino{
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 4fr;
+
+    grid-column-gap: 1px;
+
+    overflow: scroll;
+}
+
+.subt-ter{
+    height: fit-content;
+    background-color: rgb(210, 212, 212);
+    color: black;
+
+    text-align: justify;
+}
+
+.subt-ter-1{    
+    height: fit-content;
+    background-color: white;
+    
+    color: black;
+
+    text-align: justify;
+}
+
+/* HTML PRIVACIDAD */
+
+.privacy{
+    display: grid;
+
+    grid-template-rows: 1fr 4fr;
+
+    grid-column-gap: 1px;
+
+    overflow: scroll;
+}
+
+.privacy .img {
+    width: 50%;
+    height: 50%;
+}
+
+.subt-pry{
+    height: fit-content;
+    background-color: rgb(210, 212, 212);
+    color: black;
+
+    text-align: justify;
+}
+
+.subt-pry-1{    
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    
+    color: black;
+
+    text-align: justify;
+}
+
+/* HTML PREGUNTAS */
+
+.pregunta {
+    background-color: white;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: max-content;
+}
+.pregunta p{
+    text-align: justify;
+}
+
+.pregunta .answers{
+    width: 90%;
+
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pregunta .bt-q{
+    border: 1px;
+    padding: 1px;
+
+    background-color: lightblue;
+    border-color: darkcyan;
+    border-style: solid;
+    border-radius: 8px;
+
+    width: max-content;
+
+    align-self: auto;
+}
+
+/* HTML NUEVO ORADOR */
+
+.new-orator {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 50%;
+}
+
+.new-orator .box-Tittle{
+    height: max-content;
+
+    border: 10px 10px;
+    padding: 10px 10px;
+}
+
+.box-Tittle p{
+    font-size: 12px;
+}
+
+.box-Tittle h2{
+    font-size: 28px;
+}
+
+.new-orator .box-Forms{
+    font-size: 18px;
+}
+
+.box-Forms .forms-T{
+    font-size: 12px;
+    height: max-content;
+}
+
+.box-Forms .forms-F{
+    height: max-content;
+}
+
+/* HTML CONTACTOS */
+
+.contacts{
+    background-color: white;
+    display: grid;
+
+    grid-template-columns: 75%;
+    grid-template-rows: 80% 10% 10%;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts .forms-Contact{
+    background-color: whitesmoke;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 100%;
+}
+
+.fieldContact .fileForms{
+    height: 50px;
+}
+
+.fieldContact .fileFormsArea{
+    height: 200px;
+}
+
+.contacts .redes-Contact{
+    background-color: lightblue;
+    height: max-content;
+}
+
+.contacts .phones-Contact{
+    background-color: whitesmoke;
+    height: max-content;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    padding: 1px;
+    margin: 1px;
+
+    font-size: 12px;
+}
+
+.tittle-Contact > p{
+    height: max-content;
+    padding: 1px;
+    margin: 1px;
+}
+
+.phones-Contact .wpb_wrapper{
+    height: max-content;
+    display: inline;
+
+    padding: 12px;
+    margin: 1px;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wpb_wrapper > p{
+    height: max-content;
+    padding: 1px;
+    margin: 1px;
+}
+
+/* HTML TICKETS */
+
+.price{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 45% 45%;
+    
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.campoView .campo-Gral{
+    display: grid;
+    grid-template-rows: 15% 40% 35% 10%;
+    grid-template-columns: 90%;
+
+    background-color: silver;
+    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.campo-Gral .compra-Place{    
+    height: 100%;
+}
+
+.compra-Place .fileForms{
+    height: 70px;
+}
+
+.compra-Place .columForms{
+    height: 40px;
+}
+
+.compra-Place .fileForms h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.campo-Gral .compra-Date{    
+    height: 100%;
+}
+
+.compra-Date .fileForms{
+    height: 70px;
+}
+
+.compra-Date .columForms{
+    height: 40px;
+}
+
+.compra-Date .fileForms h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.compra-Date .campoDatos{
+    background-color: aquamarine;
+    border: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: double;
+}
+
+.campo-Gral .compra-Cards{
+    height: 100%;
+}
+
+.compra-Cards .fileForms h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.compra-Cards .fileForms{
+    height: 70px;
+}
+
+.compra-Cards .fileForms .columForms{
+    height: 40px;
+}
+
+.compra-Cards .fileForms .columFormsCT{
+    height: max-content;
+    text-align: center;
+    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.columForms .legenT{
+    font-size: 32px;
+    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ADJUNTO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- ADJUNTO BOOTSTRAP PARA JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- ADJUNTO STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONO EN LA PESTAÑA -->
+    <link rel="shortcut icon" href="img/logo_BA_02.png">
+    
+    <title>NUEVO ORADOR</title>
+</head>
+<body>
+    
+    <header class="encabezado">
+
+        <div class="logo">
+             <img id="img" src="img/codoacodo.png" alt="encabezado">
+         </div>
+     
+         <div class="titulos">
+             <p id="titulos">Conviértete en Orador</p>
+         </div>
+     
+         <nav class="navegation">
+     
+             <ul>
+                 <li><a href="index.html">La Conferencia</a></li>
+                 <li><a href="orator.html">Los Oradores</a></li>
+                 <li><a href="place_&_date.html">El lugar y la fecha</a></li>
+                 <li><a href="new_orator.html">Conviértete en Orador</a></li>
+                 <li><a class="BOTON"  href="tickets.html">COMPRAR TICKETS</a></li>
+             </ul>
+     
+         </nav>
+     
+     </header>    
+
+    <article class="new-orator">
+
+        <div class="box-Tittle">
+            <p>CONVIÉRTETE EN UN</p>
+            <h2> <b>ORADOR</b> </h2>
+        </div>
+
+        <div class="box-Forms">
+
+            <div class="forms-T">
+                <p>Anótate como orador para dar una <u style="text-decoration-style: dotted;">charla ignite</u>. Cuéntanos de qué quieres hablar!</p>
+            </div>
+
+            <div class="forms-F">
+                <form>
+                    <div class="row justify-content-md-center f-1">
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                      </div>
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                      </div>
+                    </div>
+                    <div class="row justify-content-md-center f-2">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" placeholder="Título de la temática">
+                        </div>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="¿Sobre qué quieres hablar?"></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center f-3">
+                        <div class="col-md-3">
+                            <label for="option-1">Opción 1</label>
+                            <select class="form-control" id="option-1">
+                                <option>Javascript</option>
+                                <option>CSS</option>
+                                <option>HTML</option>
+                                <option>Bootstrap</option>
+                                <option>Negocios</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="option-2">Opción 2</label>
+                            <select class="form-control" id="option-2">
+                                <option>Startups</option>
+                                <option>React</option>
+                                <option>Programs</option>
+                                <option>Styles</option>
+                                <option>Commands</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center f-4">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="imagen">Subir Foto de Perfil</label>
+                                <input type="file" class="form-control-file" id="imagen">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10">
+                            <button class="btn btn-primary" type="submit">ENVIAR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </article>
+
+    <footer>
+
+        <nav class="pie">
+            <ul>
+                <li><a href="questions.html">Preguntas <br> frecuentes</a></li>
+                <li><a href="contact.html">Contáctenos</a></li>
+                <li><a href="press.html">Prensa</a></li>
+                <li><a href="conference.html">Conferencias</a></li>
+                <li><a href="conditions.html">Términos y <br> Condiciones</a></li>
+                <li><a href="privacy.html">Privacidad</a></li>
+                <li><a href="students.html">Estudiantes</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+</html>
